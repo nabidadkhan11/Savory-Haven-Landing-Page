@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(242, 238, 232);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: rgb(242, 238, 232);
+    padding: 10px 20px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.logo {
+    flex: 1;
+    padding-left: 26px;
+}
+
+.logo p {
+    color: #000000;
+    font-size: 28px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+    align-items: center;
+}
+
+.home a,
+.menu a,
+.about a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.home a:hover,
+.menu a:hover,
+.about a:hover {
+    color: #FFD700;
+    background-color: #333;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-us button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-us button:hover {
+    background-color: #333;
+    color: #FFD700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+    background-color: rgb(242, 238, 232);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.main-hero {
+    background-color: #f2d219;
+    height: 600px;
+    width: 1792px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
+.img-hero img {
+    height: 600px;
+}
+
+.button-hero {
+    margin-left: 114px;
+}
+
+.button-hero button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #000;
+    color: #FFD700;
+    /* Matches the background color */
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-hero button:hover {
+    background-color: #FFD700;
+    /* Inverse the button colors on hover */
+    color: #000;
+}
+
+.button-hero p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    /* Dark grey for contrast */
+    margin: 0;
+}
+
+.button-hero p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #444;
+    /* Slightly lighter grey */
+}
+
+
+
+
+/* Feature Dishes */
+
+.feature-section {
+    padding: 50px 0;
+    background-color: rgb(242, 238, 232);
+    display: flex;
+    justify-content: center;
+}
+
+.main-feature {
+    background-color: white;
+    border-radius: 50px;
+    padding: 40px;
+    max-width: 1792px;
+    width: 100%;
+    height: 677px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.feature-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: bold;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.dish-card {
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.dish-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dish-img {
+    width: 100%;
+    height: 273px;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.dish-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.dish-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dish-info p {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Halal Badge Styling */
+.halal-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #FFD700;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* testominal  */
+.testimonial-section {
+    /* background-color: rgb(242, 238, 232);  */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #5C3317;
+}
+
+.main-feedback {
+    height: 500px;
+    width: 1792px;
+    background-color: white;
+    padding: 60px 0;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    color: #D2691E;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.customer-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #FFCC00;
+}
+
+.customer-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.customer-title {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 361px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 60px;
+}
+
+
+.main-footer {
+    height: 361px;
+    width: 1792px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 103px;
+}
+
+.address-footer {
+    width: 520px;
+    height: 260px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.navigations-footer {
+    width: 516px;
+    height: 260px;
+    text-align: center;
+}
+
+
+.follow-footer {
+    width: 516px;
+    height: 260px;
+    text-align: center;
+}
+
+/**/
+.p-1 {
+    font-size: 30px;
+}
+
+.p-2 {
+    font-size: 24px;
+}
+
+.p-3 {
+    font-size: 18px;
+}
+
+.p-4 {
+    font-size: 16px;
+}
+
+.p-1,
+.p-2,
+.p-3,
+.p-4 {
+    margin-top: 12px;
+}
+
+#text-email {
+    text-decoration: none;
+    color: black;
+}
+
+#text-email:hover {
+    color: #f2d219;
+}
+
+/**/
+.copyright {
+    color: rgb(165, 165, 165);
+}
+
+.lists-footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.lists-footer a:hover {
+    color: #f2d219;
+}
+
+/**/
+.icons-footer {
+    display: flex;
+    gap: 12px;
+    padding-left: 198px;
+    padding-top: 12px;
+}
